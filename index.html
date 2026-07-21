@@ -89,6 +89,135 @@
       <!-- Dashboard area -->
 
       <section class="dashboard">
+        <!-- Summary Cards -->
+        <div class="summary-cards">
+          <!-- Salary Card -->
+          <div class="card salary-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <div class="card-content">
+              <h4>Total Salary</h4>
+              <h2 id="salaryDisplay">₹0</h2>
+            </div>
+          </div>
+
+          <!-- Expense Card -->
+
+          <div class="card expense-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-money-bill-wave"></i>
+            </div>
+            <div class="card-content">
+              <h4>Total Expenses</h4>
+              <h2 id="expenseDisplay">₹0</h2>
+            </div>
+          </div>
+
+          <!-- Balance Card -->
+
+          <div class="card balance-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-piggy-bank"></i>
+            </div>
+            <div class="card-content">
+              <h4>Remaining Balance</h4>
+              <h2 id="balanceDisplay">₹0</h2>
+            </div>
+          </div>
+
+
+          <!-- Transaction card -->
+
+
+          <div class="card transaction-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <div class="card-content">
+              <h4>Total Transactions</h4>
+              <h2 id="transactionCount">0</h2>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="dashboard-grid">
+          <!-- salary form -->
+          <div class="panel">
+
+            <h3>Set Your Salary</h3>
+            <form id="salaryForm">
+              <label>Total Salary</label>
+              <input type="number" id="salaryInput" placeholder="Enter Monthly Salary">
+              <button type="submit">
+                Save Salary
+              </button>
+            </form>
+          </div>
+          <!-- Expense Form -->
+          <div class="panel">
+            <h3>Add Expense</h3>
+            <form id="expenseForm">
+
+              <label>Expense Name</label>
+              <input type="text" id="expenseName" placeholder="Rent / Food / Shopping">
+
+              <label>Expense Amount</label>
+
+              <input type="number" id="expenseAmount" placeholder="Enter Amount">
+
+              <button type="submit">
+
+                Add Expense
+
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Chart -->
+
+          <div class="panel">
+            <h3>Expense Overview</h3>
+            <canvas id="expenseChart"></canvas>
+          </div>
+
+
+        </div>
+
+        <!-- Expense List -->
+
+        <div class="expense-list-panel">
+          <div class="panel-header">
+            <h3>Recent Expenses</h3>
+            <span id="expenseCounter">0 Transactions</span>
+          </div>
+            <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Expense</th>
+                 <th>Amount</th>
+
+                <th>Date</th>
+
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody id="expenseTableBody">
+              <tr class="empty-row">
+                <td colspan="4">
+                  No expenses added yet.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </div>
+        </div>
 
       </section>
 
