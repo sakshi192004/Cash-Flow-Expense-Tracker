@@ -367,3 +367,17 @@ th{
 .table-wrapper{
   overflow-x: auto;
 }
+
+.delete-btn{
+  border: none;
+  background: #ef4444;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.delete-btn:hover{
+  background: #dc2626;
+}
