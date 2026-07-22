@@ -505,7 +505,9 @@ th{
 .profile{
   display: none;
 }
-
+.currency-btn{
+  display: none;
+}
 /* .sidebar.active{
 
     left:0;
