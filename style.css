@@ -381,3 +381,350 @@ th{
 .delete-btn:hover{
   background: #dc2626;
 }
+
+
+.download-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.download-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+.warning-banner{
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    border:1px solid #ef4444;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin:20px 0;
+
+    font-weight:600;
+
+    text-align:center;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+
+
+.currency-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.currency-box select{
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    cursor:pointer;
+
+}
+
+
+
+
+/* ===========================
+   Laptop
+=========================== */
+
+@media (max-width:1024px){
+
+.summary-cards{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.dashboard-grid{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:768px){
+
+.container{
+    display:block;
+}
+
+/* Sidebar */
+
+.sidebar{
+
+    display: none;
+
+}
+
+/* .sidebar.active{
+
+    left:0;
+
+} */
+
+/* Hamburger */
+
+.menu-btn{
+
+    display:none;
+
+}
+
+/* Main */
+
+.main-content{
+
+    width:100%;
+
+    padding:15px;
+
+}
+
+/* Topbar */
+
+.topbar{
+
+    flex-wrap:wrap;
+
+    height:auto;
+
+    padding:15px;
+
+    gap:15px;
+
+}
+
+.topbar-right{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+/* Cards */
+
+.summary-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Dashboard */
+
+.dashboard-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Currency */
+
+.currency-box{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+/* Buttons */
+
+.download-btn{
+
+    width:100%;
+
+}
+
+.theme-btn,
+.currency-btn{
+
+    flex:1;
+
+}
+
+/* Profile */
+
+.profile span{
+
+    display:none;
+
+}
+
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:576px){
+
+.logo{
+
+    margin-bottom:30px;
+
+}
+
+.logo i{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:22px;
+
+}
+
+.logo-text h2{
+
+    font-size:20px;
+
+}
+
+.card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    text-align:left;
+
+}
+
+.card-content h2{
+
+    font-size:22px;
+
+}
+
+.panel{
+
+    padding:18px;
+
+}
+
+input{
+
+    font-size:14px;
+
+}
+
+form button{
+
+    width:100%;
+
+}
+
+.warning-banner{
+
+    font-size:14px;
+
+}
+
+.table-wrapper{
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    min-width:650px;
+
+}
+
+}
+
+
+
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media (max-width:400px){
+
+.topbar-right{
+
+    flex-direction:column;
+
+}
+
+.currency-btn,
+.download-btn,
+.theme-btn{
+
+    width:100%;
+
+}
+
+.avatar{
+
+    width:35px;
+
+    height:35px;
+
+}
+
+.card-content h2{
+
+    font-size:18px;
+
+}
+
+}
+
+

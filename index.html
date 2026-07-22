@@ -66,12 +66,13 @@
             INR (₹)
           </button>
 
-          <button class="download-btn">
+          <button class="download-btn"
+          onclick="generatePDF()">
             <i class="fa-solid fa-download"></i>
             Download Report
           </button>
 
-          <button class="theme-btn">
+          <button style="display: none;" class="theme-btn">
             <i class="fa-solid fa-moon"></i>
           </button>
 
@@ -89,6 +90,27 @@
       <!-- Dashboard area -->
 
       <section class="dashboard">
+
+
+        <div class="currency-box">
+
+          <label>Select Currency</label>
+
+          <select id="currency">
+
+            <option value="INR">INR</option>
+
+            <option value="USD">USD</option>
+
+            <option value="EUR">EUR</option>
+
+            <option value="GBP">GBP</option>
+
+          </select>
+
+        </div>
+
+
         <!-- Summary Cards -->
         <div class="summary-cards">
           <!-- Salary Card -->
@@ -187,6 +209,23 @@
 
         </div>
 
+
+        <div id="warningBanner" class="warning-banner hidden">
+
+          ⚠️ Warning! Your remaining balance is below 10% of your salary.
+
+        </div>
+
+
+
+
+
+        <!-- <button id="downloadPDF" class="download-btn">
+
+          Download Report
+
+        </button> -->
+
         <!-- Expense List -->
 
         <div class="expense-list-panel">
@@ -194,27 +233,27 @@
             <h3>Recent Expenses</h3>
             <span id="expenseCounter">0 Transactions</span>
           </div>
-            <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Expense</th>
-                 <th>Amount</th>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Expense</th>
+                  <th>Amount</th>
 
-                <th>Date</th>
+                  <th>Date</th>
 
-                <th>Action</th>
-              </tr>
-            </thead>
+                  <th>Action</th>
+                </tr>
+              </thead>
 
-            <tbody id="expenseTableBody">
-              <tr class="empty-row">
-                <td colspan="4">
-                  No expenses added yet.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+              <tbody id="expenseTableBody">
+                <tr class="empty-row">
+                  <td colspan="4">
+                    No expenses added yet.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
           </div>
         </div>
@@ -224,7 +263,13 @@
     </main>
   </div>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
+
+
+  <!-- <div class="overlay"></div> -->
 </body>
 
 </html>
