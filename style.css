@@ -502,6 +502,10 @@ th{
 
 }
 
+.profile{
+  display: none;
+}
+
 /* .sidebar.active{
 
     left:0;
