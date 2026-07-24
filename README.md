@@ -8,11 +8,26 @@ A responsive Salary & Expense Tracker built using **HTML, CSS, and Vanilla JavaS
 
 🔗 Live Website: https://cash-flow-expense-tracker-iota.vercel.app/
 
----
+🔗 Demo Video: https://drive.google.com/file/d/1aO65BF6OrLjsiOy3D54ZSV-TcwFdGvmd/view?usp=drive_link
+
+
+
 
 ## 📂 GitHub Repository
 
 🔗 https://github.com/sakshi192004/Cash-Flow-Expense-Tracker
+
+
+
+## 📷 Screenshot
+
+### Dashboard
+
+![Dashboard](screenshot/dashboard.png)
+
+---
+
+
 
 
 # 📌 Features
