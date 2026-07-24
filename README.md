@@ -74,31 +74,7 @@ Cash-Flow-Expense-Tracker/
 
 ---
 
-# 📷 Screenshots
 
-## Dashboard
-
-(Add Screenshot Here)
-
----
-
-## Expense Table
-
-(Add Screenshot Here)
-
----
-
-## Pie Chart
-
-(Add Screenshot Here)
-
----
-
-## PDF Report
-
-(Add Screenshot Here)
-
----
 
 
 # 📖 Learning Outcomes
